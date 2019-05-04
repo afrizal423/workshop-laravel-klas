@@ -17,7 +17,7 @@
         <p>Hobi</p>
         <ul>
 
-            @foreach($hobi as $m)
+            @foreach($matkul as $m)
 
             <li>{{ $m }}</li>
 
