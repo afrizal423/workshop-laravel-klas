@@ -25,10 +25,11 @@
         <div class="center">
             <h2>Data Pegawai</h2>
         </div>
-    <a href="{{ url('/datapegawai/tambah') }}" class="waves-effect waves-light btn">Tambah Data</a>
+        <a href="{{ url('/datapegawai/tambah') }}" class="waves-effect waves-light btn">Tambah Data</a>
         <table class="responsive-table">
             <thead>
                 <tr>
+                    <th>No</th>
                     <th>Nama Pegawai</th>
                     <th>Jabatan Pegawai</th>
                     <th>Alamat Pegawai</th>
@@ -39,14 +40,23 @@
             </thead>
 
             <tbody>
+                @foreach ($data as $no => $dt)
                 <tr>
-                    <td>Alvin</td>
-                    <td>Eclair</td>
-                    <td>$0.87</td>
-                    <td>$0.87</td>
-                    <td>$0.87</td>
-                    <td>Aksi</td>
+                    <td>{{$no+1}}</td>
+                    <td>{{$dt->nama_pegawai}}</td>
+                    <td>{{$dt->jabatan_pegawai}}</td>
+                    <td>{{$dt->alamat_pegawai}}</td>
+                    <td>{{$dt->umur_pegawai}}</td>
+                    <td>{{$dt->no_telp}}</td>
+                    <td>
+                        <a
+                            href="/datapegawai/update/{{ $dt->id_pegawai }}"
+                            class="waves-effect orange btn">Edit Data</a>
+                        <a href="/datapegawai/hapus/{{ $dt->id_pegawai }}" class="waves-effect red btn">Hapus Data</a>
+                    </td>
                 </tr>
+
+                @endforeach
 
             </tbody>
         </table>

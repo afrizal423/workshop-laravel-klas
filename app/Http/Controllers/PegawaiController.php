@@ -10,7 +10,9 @@ class PegawaiController extends Controller
 {
     //
     public function index(){
-        return view('coba');
+        $query = DB::table('tb_pegawai')->get();
+
+        return view('coba',['data' =>$query]);
     }
     
     public function add(){
