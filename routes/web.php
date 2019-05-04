@@ -28,6 +28,7 @@ Route::get('/datapegawai', 'PegawaiController@index');
 Route::get('/datapegawai/tambah', 'PegawaiController@add')->name('tambahpegawai');
 Route::post('/datapegawai/tambah', 'PegawaiController@prosesAdd');
 
-Route::get('/datapegawai/update', 'PegawaiController@update');
+Route::get('/datapegawai/update/{id}', 'PegawaiController@update');
+Route::post('/datapegawai/update/{id}', 'PegawaiController@prosesUpdate');
 
-Route::get('/datapegawai/hapus', 'PegawaiController@delete');
+Route::get('/datapegawai/hapus/{id}', 'PegawaiController@delete');
