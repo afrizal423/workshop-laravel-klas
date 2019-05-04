@@ -1,4 +1,14 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="right">
+بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم 
+</p>
+
+# Lokakarya KLAS(Komunitas Linux Surabaya)
+
+<br>
+<p align="center">
+<img src="https://raw.githubusercontent.com/afrizal423/workshop-laravel-klas/master/gambar/klas_index.png"/>
+<p align="left"><img src="https://raw.githubusercontent.com/afrizal423/workshop-laravel-klas/master/gambar/klas_insert.png"></p>
+<p align="left"><img src="https://raw.githubusercontent.com/afrizal423/workshop-laravel-klas/master/gambar/klas_update.png"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
