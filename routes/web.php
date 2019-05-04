@@ -20,3 +20,11 @@ Route::get('/coba', function () {
 });
 
 Route::get('/mahasiswa', 'mahasiswaController@index');
+
+Route::get('/datapegawai', 'PegawaiController@index');
+
+Route::get('/datapegawai/tambah', 'PegawaiController@add');
+
+Route::get('/datapegawai/update', 'PegawaiController@update');
+
+Route::get('/datapegawai/hapus', 'PegawaiController@delete');
